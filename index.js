@@ -11,6 +11,7 @@ mongoose.connect(keys.mongoURI);
 
 const app = express();
 
+//app.use (middlewares) for every route
 app.use(bodyParser.json());
 app.use(
   cookieSession({
